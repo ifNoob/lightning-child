@@ -13,7 +13,7 @@
 * Lightning Child Theme Customize
 
 # == Privacy Notices ==
-* With the default configuration, this plugin, in itself, does not:
+* With the default configuration, this Theme, in itself, does not:
 * track users by stealth;
 * write any user personal data to the database;
 * send any data to external servers;
