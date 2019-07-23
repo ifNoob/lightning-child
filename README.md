@@ -24,7 +24,7 @@
 
 # == Features ==
 * Lightning Gutenberg  CSS Customize
-* Gutenberg ブロックエディタ CSS
+* Gutenberg ブロックエディタ カスタマイズ CSS
 
 # == Installation ==
 * Upload the plugin to the '/wp-content/themes/' directory
@@ -36,8 +36,7 @@
 * Sorry.
 
 # == Frequently asked questions ==
-* Lightning Theme Child
-*
+* Lightning Theme Child fork
 
 * = 1.0 =
 * It is Initial release
