@@ -11,6 +11,10 @@
 
 # == Description ==
 * Lightning Child Theme Customize
+* Lightning チャイルドテーマですが、他のテーマも利用可能
+* style.cssの Template: Lightning <- 他の親テーマ名に書き換えればLightning以外で利用可能
+* editor-blocks.css 内が、管理編集画面 Gutenberg プロックエディタのカスタマイズCSS内容
+* editor-style.css は、旧エディタMCEのカスタマイズ用 CSS
 
 # == Privacy Notices ==
 * With the default configuration, this Theme, in itself, does not:
