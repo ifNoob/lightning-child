@@ -1,0 +1,11 @@
+/**----------------
+* OLD MCE style
+-----------------*/
+body.mceContentBody {
+  font-size:1rem;
+	font-family: sans-serif; overflow-wrap: break-word; word-break: normal;
+}
+#content_ifrbody body#tinymce.mceContentBody {
+  font-size:1rem;
+  font-family: sans-serif;
+}

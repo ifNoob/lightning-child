@@ -1,0 +1,88 @@
+/**----------------
+* Gutenberg admin style
+* custom CSS 追加
+-----------------*/
+/* Gutenberg Editor font */
+.editor-styles-wrapper {
+    font-family: sans-serif !important;
+}
+.editor-post-title__block .editor-post-title__input {
+    font-family: sans-serif;
+}
+
+/* block outer部 */
+.editor-post-title,
+.editor-block-list__layout.block-editor-block-list__layout {
+/*	border: 1px dotted #f00;*/
+}
+.wp-block.editor-block-list__block.block-editor-block-list__block {
+	max-width: 750px !important;
+}
+.wp-block.editor-block-list__block.block-editor-block-list__block[data-align="full"] {
+	max-width: 100% !important;
+	padding-right: 0 !important;
+}
+.wp-block editor-block-list__block.block-editor-block-list__block[data-align="wide"] {
+	min-width: 1140px !important;
+	padding-right: 0 !important;
+}
+/* タイトル位置 */
+.editor-post-title {
+  position: relative;
+  top: -60px !important;
+}
+
+/*----- block 線幅対応部 -----*/
+@media (min-width:600px) and (max-width: 3840px) {
+ .block-editor-block-list__layout {
+  padding-left: 16px;
+  padding-right:0;
+ }
+}
+
+/* 2Column < 部 */
+.wp-block-columns [data-type="core/column"] .block-editor-block-list__layout {
+	border: 1px dotted #666;
+}
+.editor-block-list__block-edit.block-editor-block-list__block-edit {
+	margin-top: 32px;
+	margin-bottom: 32px;
+}
+
+.wp-block.editor-block-list__block.block-editor-block-list__block:hover {
+	background-color: rgb(200,200,200, 0.15);
+}
+
+/* p paragraph */
+p.block-editor-rich-text__editable.editor-rich-text__editable.wp-block-paragraph {
+	border: 1px dotted #e6e6e6;
+}
+/* block枠消し */
+.wp-block-columns > .editor-inner-blocks.block-editor-inner-blocks > .editor-block-list__layout.block-editor-block-list__layout {
+	border: none;
+}
+.wp-block.editor-block-list__block.block-editor-block-list__block [data-type="core/paragraph"],
+.wp-block.editor-block-list__block.block-editor-block-list__block [data-type="core/column"] {
+	margin-bottom: 2rem !important;
+}
+/* block 追加分 */
+.wp-block.editor-default-block-appender.block-editor-default-block-appender {
+	border: 1px dotted #ccc;
+	max-width: 900px !important;
+}
+.components-resizable-box__container.block-library-spacer__resize-container {
+	background-color: #efefef;
+}
+
+/**----------------
+* Old MCE style
+-----------------*/
+body.mceContentBody {
+  font-size:1rem;
+	font-family: sans-serif; overflow-wrap: break-word; word-break: normal;
+}
+#content_ifrbody body#tinymce.mceContentBody {
+  font-size:1rem;
+  font-family: sans-serif;
+}
+
