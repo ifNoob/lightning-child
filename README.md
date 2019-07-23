@@ -1,6 +1,7 @@
 # === BcChloe-Lightning-child theme ===
 * Contributors: BcChloe
 * Author URI: https://bcchloe.jp
+* Donate link: https://beginners.nagoya
 * Tags: WordPress, Themes, child theme, Gutenberg Customize
 * Requires at least: 1.2.0
 * Tested up to: 5.2.2
