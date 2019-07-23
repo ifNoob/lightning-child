@@ -1,6 +1,5 @@
 # === BcChloe-Lightning-child theme ===
 * Contributors: BcChloe
-* Donate link: https://bcchloe.jp
 * Author URI: https://bcchloe.jp
 * Tags: WordPress, Themes, child theme, Gutenberg Customize
 * Requires at least: 1.2.0
