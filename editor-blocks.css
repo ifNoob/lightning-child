@@ -13,7 +13,6 @@
 /* block outer部 */
 .editor-post-title,
 .editor-block-list__layout.block-editor-block-list__layout {
-/*	border: 1px dotted #f00;*/
 }
 .wp-block.editor-block-list__block.block-editor-block-list__block {
 	max-width: 750px !important;
