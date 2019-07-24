@@ -31,7 +31,7 @@
   top: -60px !important;
 }
 
-/*----- block 線幅対応部 -----*/
+/* block 線幅対応部 */
 @media (min-width:600px) and (max-width: 3840px) {
  .block-editor-block-list__layout {
   padding-left: 16px;
@@ -39,7 +39,7 @@
  }
 }
 
-/* 2Column < 部 */
+/* Column 部 */
 .wp-block-columns [data-type="core/column"] .block-editor-block-list__layout {
 	border: 1px dotted #666;
 }
