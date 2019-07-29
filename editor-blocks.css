@@ -87,7 +87,7 @@ body.post-type-post .editor-writing-flow {
 	background-color: #fff !important;
   max-width: 780px !important;				/* Theme style コンテナ枠 + 30px */
 	margin: 0 auto !important;
-	border: 1px solid #f00;
+/*	border: 1px solid #f00;*/
 }
 body.post-type-post .wp-block {
   max-width: 750px !important;				/* Theme style コンテナ枠のwidth */
@@ -109,7 +109,7 @@ body.post-type-page .editor-writing-flow {
 	background-color: #fff !important;
   max-width: 1170px !important;				/* Theme style コンテナ幅 + 30px */
 	margin: 0 auto !important;
-	border: 1px solid #00f;
+/*	border: 1px solid #00f;*/
 }
 body.post-type-page .wp-block {
 	max-width: 1140px !important;			/* Theme style コンテナ幅 */
