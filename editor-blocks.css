@@ -78,7 +78,7 @@ Description: Nagoya Beginners. Gutenberg block editor custom css
 .wp-block-columns > .block-editor-inner-blocks > .block-editor-block-list__layout > [data-type="core/column"] {
     margin-left: 14px;
     margin-right: 14px;
-    flex-basis: calc(50% - 4px);		/* Column幅調整 */
+    flex-basis: calc(50% - 4px);			/* Column幅調整 */
     flex-grow: 0;
 }
 
@@ -100,7 +100,11 @@ body.post-type-post .wp-block.editor-block-list__block.block-editor-block-list__
   max-width: 750px !important;				/* Theme style コンテナ幅 */
 }
 
-/* 固定ベージ */
+/**==================
+* 固定ベージ サイドバー無しの場合 (テンプレートサイドバー無し選択)
+* サイドバーの場合は、1170pxを780px
+* 1140pxを750pxへ修正
+====================*/
 body.post-type-page .editor-writing-flow {
 	background-color: #fff !important;
   max-width: 1170px !important;				/* Theme style コンテナ幅 + 30px */
