@@ -80,12 +80,17 @@ function add_wp_footer_custom(){ ?>
 /* Gutenberg CSS
 ---------------------------*/
 function gutenberg_style_custom() {
-  add_theme_support( 'align-wide' );      // Gutenberg 幅広 & 全幅対応
-  add_theme_support( 'cover' );           // Gutenberg 幅広 & 全幅対応/
-// テーマ style lead
-  add_theme_support( 'editor-styles' );   //現在適用しているテーマのeditor-style.cssを読み込む
-  add_editor_style( 'editor-blocks.css' );
-  //JavaScriptも読み込み可能
-  // wp_enqueue_script( 'theme-gutenberg-js', get_theme_file_uri('/js/gutenberg.js'), array( 'jquery' ), false, true );
+  add_theme_support( 'align-wide' );      // Gutenberg 幅広
+  add_theme_support( 'cover' );           // Gutenberg 全幅対応
 }
 add_action( 'after_setup_theme', 'gutenberg_style_custom' );
+
+/**--------------------------
+/* Gutenberg 機能追加 Ver5.2.2
+/* Gutenberg CSS
+---------------------------*/
+function gutenberg_stylesheets_custom() {
+  wp_enqueue_style( 'child-editor-blocks-style', get_stylesheet_directory_uri() . '/editor-blocks.css' );
+}
+add_action( 'enqueue_block_editor_assets', 'gutenberg_stylesheets_custom' );
+
