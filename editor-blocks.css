@@ -1,3 +1,8 @@
+/*
+Theme Name: Lightning child Theme
+Description: Nagoya Beginners. Gutenberg block editor custom css
+*/
+
 /**----------------
 * Gutenberg admin style
 * custom CSS 追加
@@ -9,49 +14,122 @@
 .editor-post-title__block .editor-post-title__input {
     font-family: sans-serif;
 }
+/* Editor 外枠 */
+.edit-post-layout__content .edit-post-visual-editor {
+  flex-shrink: 0;
+  flex-grow: 0;
+  padding: 0 10px;
+}
+.editor-styles-wrapper {
+    background-color: #f4f5f7 !important;
+    background-attachment: fixed;
+}
+.edit-post-layout__content .edit-post-visual-editor {
+    flex-basis: 100%;
+}
 
-/* block outer部 */
-.editor-post-title,
-.editor-block-list__layout.block-editor-block-list__layout {
+/* main */
+.editor-styles-wrapper .main {
+	background-color: #fff !important;
 }
-.wp-block.editor-block-list__block.block-editor-block-list__block {
-	max-width: 750px !important;
+.editor-writing-flow {
+  max-width: 780px;
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #fff;
 }
-.wp-block.editor-block-list__block.block-editor-block-list__block[data-align="full"] {
-	max-width: 100% !important;
-	padding-right: 0 !important;
+.editor-styles-wrapper .editor-writing-flow.main {
+  width: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 20px auto;
 }
-.wp-block editor-block-list__block.block-editor-block-list__block[data-align="wide"] {
-	min-width: 1140px !important;
-	padding-right: 0 !important;
+.editor-styles-wrapper .block-editor-block-list__layout {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
-/* タイトル位置 */
+
+/* ブロック共通 */
+.wp-block {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+/* タイトル */
 .editor-post-title {
-  position: relative;
-  top: -60px !important;
+  padding-left: 0;
+  padding-right: 0;
+  font-size: 32px;
+}
+.editor-post-title__block .editor-post-title__input {
+	padding: 19px 0;
 }
 
-/* block 線幅対応部 */
-@media (min-width:600px) and (max-width: 3840px) {
- .block-editor-block-list__layout {
-  padding-left: 16px;
-  padding-right:0;
- }
+/* カラム */
+.wp-block-columns {
+	max-width: 750px;
+  margin: 0 auto;
+}
+.edit-post-visual-editor .block-editor-block-list__block .block-editor-block-list__block-edit {
+    margin-left: 0;
+    margin-right: 0;
+}
+.wp-block-columns > .block-editor-inner-blocks > .block-editor-block-list__layout > [data-type="core/column"] {
+    margin-left: 14px;
+    margin-right: 14px;
+    flex-basis: calc(50% - 4px);		/* Column幅調整 */
+    flex-grow: 0;
 }
 
-/* Column 部 */
-.wp-block-columns [data-type="core/column"] .block-editor-block-list__layout {
-	border: 1px dotted #666;
+/* bolg */
+body.post-type-post .editor-writing-flow {
+	background-color: #fff !important;
+  max-width: 780px !important;				/* Theme style コンテナ枠 + 30px */
+	margin: 0 auto !important;
+	border: 1px solid #f00;
 }
-.editor-block-list__block-edit.block-editor-block-list__block-edit {
-	margin-top: 32px;
-	margin-bottom: 32px;
+body.post-type-post .wp-block {
+  max-width: 750px !important;				/* Theme style コンテナ枠のwidth */
+	margin: 0 auto !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+body.post-type-post .wp-block.editor-block-list__block.block-editor-block-list__block[data-type="core/cover"][data-align="full"] {
+	width: 100% !important;
+  max-width: 750px !important;				/* Theme style コンテナ幅 */
 }
 
+/* 固定ベージ */
+body.post-type-page .editor-writing-flow {
+	background-color: #fff !important;
+  max-width: 1170px !important;				/* Theme style コンテナ幅 + 30px */
+	margin: 0 auto !important;
+	border: 1px solid #00f;
+}
+body.post-type-page .wp-block {
+	max-width: 1140px !important;			/* Theme style コンテナ幅 */
+	margin: 0 auto !important;
+}
+body.post-type-page .wp-block.editor-block-list__block.block-editor-block-list__block[data-type="core/cover"][data-align="full"] {
+	width: 100% !important;
+	max-width: 1140px !important;
+}
+body.post-type-page .editor-writing-flow {
+	background-color: #fff !important;
+  max-width: 1140px !important;				/* Theme style コンテナ幅 */
+	margin: 0 auto !important;
+}
+body.post-type-page .wp-block-columns {
+	max-width: 1140px;				/* Theme style コンテナ幅 width */
+	margin: 0 auto;
+}
+
+
+/* block hover */
 .wp-block.editor-block-list__block.block-editor-block-list__block:hover {
 	background-color: rgb(200,200,200, 0.15);
 }
-
 /* p paragraph */
 p.block-editor-rich-text__editable.editor-rich-text__editable.wp-block-paragraph {
 	border: 1px dotted #e6e6e6;
@@ -60,17 +138,37 @@ p.block-editor-rich-text__editable.editor-rich-text__editable.wp-block-paragraph
 .wp-block-columns > .editor-inner-blocks.block-editor-inner-blocks > .editor-block-list__layout.block-editor-block-list__layout {
 	border: none;
 }
+/* Column spacer */
 .wp-block.editor-block-list__block.block-editor-block-list__block [data-type="core/paragraph"],
 .wp-block.editor-block-list__block.block-editor-block-list__block [data-type="core/column"] {
 	margin-bottom: 2rem !important;
 }
-/* block 追加分 */
-.wp-block.editor-default-block-appender.block-editor-default-block-appender {
-	border: 1px dotted #ccc;
-	max-width: 900px !important;
+
+
+/**----------------
+* admin Theme Customize css
+-----------------*/
+.customize-control-title {
+	background-color: #555;
+	color: #fff;
+	padding: 5px;
 }
-.components-resizable-box__container.block-library-spacer__resize-container {
-	background-color: #efefef;
+label[for="_customize-input-Bc_theme_options_post_button"] {
+	background-color: #555;
+	color: #fff;
+	padding: 5px;
+}
+
+/* Slider */
+input[type="range"].range-slider {
+	 float: left;
+	 width: 80%;
+}
+input[type="text"].range-slider-num {
+	position: relative;
+	margin-left: 10px;
+	width: 30px;
+	top: -2px;
 }
 
 /**----------------
@@ -84,4 +182,3 @@ body.mceContentBody {
   font-size:1rem;
   font-family: sans-serif;
 }
-
