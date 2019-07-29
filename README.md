@@ -38,6 +38,9 @@
 # == Frequently asked questions ==
 * Lightning Theme Child fork
 
+* = 1.1 =
+* コンテナ部を明確し、Column部の修正
+
 * = 1.0 =
 * It is Initial release
 
